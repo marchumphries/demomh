@@ -841,6 +841,11 @@ select {
     right: 91.66667%;
     left: auto; } }
 
+.logo-holder {
+  width: 40%;
+  max-width: 120px;
+  margin: 20px auto; }
+
 .accordion {
   margin-bottom: 0; }
   .accordion:before, .accordion:after {
