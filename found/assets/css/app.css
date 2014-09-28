@@ -90,6 +90,7 @@ textarea {
 select {
   width: 100%; }
 
+/* Deprecated: We'll drop support for this in 5.1, use grid-calc()*/
 .row {
   width: 100%;
   margin-left: auto;
@@ -845,6 +846,35 @@ select {
   width: 40%;
   max-width: 120px;
   margin: 20px auto; }
+
+.header-block {
+  background-color: #e1e1e1;
+  text-align: center; }
+  @media small-up {
+    .header-block {
+      height: 0;
+      width: 40%;
+      padding-bottom: 40%;
+      background-color: #e1e1e1;
+      border-radius: 50%; } }
+  .header-block .vertically-centered {
+    display: inline-block;
+    vertical-align: middle; }
+  .header-block img {
+    height: 100%;
+    width: 0;
+    position: relative; }
+  .header-block .content {
+    width: 70%; }
+  .header-block a {
+    background: #CCC;
+    border-radius: 4px;
+    margin: 0 auto;
+    padding: 8px 30px;
+    font-family: Arial;
+    text-decoration: none; }
+  .header-block a:hover {
+    background-color: #990000; }
 
 .accordion {
   margin-bottom: 0; }
@@ -3384,6 +3414,7 @@ table {
     display: table-cell;
     line-height: 1.125rem; }
 
+/* Deprecated: We'll drop support for this in 5.1, use grid-calc()*/
 .text-left {
   text-align: left !important; }
 
@@ -3922,6 +3953,7 @@ blockquote, blockquote p {
     top: 50%;
     margin-top: -5px; } }
 
+/* Deprecated: We'll drop support for this in 5.1, use grid-calc()*/
 meta.foundation-mq-topbar {
   font-family: "/only screen and (min-width:40.063em)/";
   width: 40.063em; }
