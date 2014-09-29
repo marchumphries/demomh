@@ -847,16 +847,33 @@ select {
   max-width: 120px;
   margin: 20px auto; }
 
+.header-banner {
+  overflow: hidden;
+  position: relative;
+  z-index: 1; }
+  .header-banner .header-banner__container {
+    position: relative;
+    z-index: -1; }
+  .header-banner .crop {
+    padding-right: 0;
+    margin-left: 0;
+    padding-bottom: 100%;
+    overflow: hidden;
+    position: absolute; }
+
 .header-block {
   background-color: #e1e1e1;
   text-align: center; }
-  @media small-up {
+  @media only screen and (min-width:40.063em) {
     .header-block {
+      z-index: 2;
       height: 0;
-      width: 40%;
-      padding-bottom: 40%;
+      width: 280px;
+      padding-bottom: 280px;
       background-color: #e1e1e1;
-      border-radius: 50%; } }
+      border-radius: 50%;
+      float: right;
+      margin: 2em 2em 4em 2em; } }
   .header-block .vertically-centered {
     display: inline-block;
     vertical-align: middle; }
@@ -875,6 +892,11 @@ select {
     text-decoration: none; }
   .header-block a:hover {
     background-color: #990000; }
+
+.row-border {
+  border-top: 8px solid #000;
+  border-bottom: 8px solid #000;
+  margin: 3em 0; }
 
 .accordion {
   margin-bottom: 0; }
